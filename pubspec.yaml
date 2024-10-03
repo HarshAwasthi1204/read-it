@@ -1,0 +1,167 @@
+name: ssip_hackathon_project
+description: SSIP Hackathon Project
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.2.9
+  animated_text_kit: ^4.2.2
+  rating_dialog: ^2.0.4
+  syncfusion_flutter_pdfviewer: ^20.3.48
+  pdfx: ^1.0.0
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  http: ^0.13.5
+  native_pdf_view: ^6.0.0+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.11.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+     - assets/images/HomeBG.jpg
+     - assets/images/HomeBGPNG.png
+     - assets/images/BG1.jpg
+     - assets/images/BG1PNG.png
+     - assets/images/BG1Cropped.jpg
+     - assets/images/BG2.jpg
+     - assets/images/BG2PNG.png
+     - assets/images/BG3.jpg
+     - assets/images/BG3PNG.png
+     - assets/images/BG4.jpg
+     - assets/images/BG4PNG.png
+     - assets/images/BG5.jpg
+     - assets/images/BG5PNG.png
+     - assets/images/BG6.jpg
+     - assets/images/BG6PNG.png
+     - assets/images/BG7.jpg
+     - assets/images/BG7PNG.png
+     - assets/images/BG8.jpg
+     - assets/images/BG8PNG.png
+     - assets/images/BG9.jpg
+     - assets/images/BG9PNG.png
+     - assets/images/BG10.jpg
+     - assets/images/BG11.jpg
+     - assets/images/BG11PNG.png
+     - assets/images/BG10PNG.png
+     - assets/images/finallogo1.png
+     - assets/images/finallogo2.png
+     - assets/images/finallogo3.png
+     - assets/images/logo1.png
+     - assets/images/testpdfcover.jpg
+     - assets/images/testpdfcover1.jpg
+     - assets/docs/test.pdf
+     - assets/docs/testpdf1.pdf
+     - assets/images/intro.gif
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: comic
+      fonts:
+        - asset: assets/fonts/comic.ttf
+        - asset: assets/fonts/comicbd.ttf
+        - asset: assets/fonts/comici.ttf
+        - asset: assets/fonts/comicz.ttf
+          weight: 500
+    - family: Barlow Condensed
+      fonts:
+        - asset: assets/fonts/BarlowCondensed-Black.ttf
+        - asset: assets/fonts/BarlowCondensed-BlackItalic.ttf
+        - asset: assets/fonts/BarlowCondensed-Bold.ttf
+        - asset: assets/fonts/BarlowCondensed-BoldItalic.ttf
+        - asset: assets/fonts/BarlowCondensed-ExtraBold.ttf
+        - asset: assets/fonts/BarlowCondensed-ExtraBoldItalic.ttf
+        - asset: assets/fonts/BarlowCondensed-ExtraLight.ttf
+        - asset: assets/fonts/BarlowCondensed-ExtraLightItalic.ttf
+        - asset: assets/fonts/BarlowCondensed-Italic.ttf
+        - asset: assets/fonts/BarlowCondensed-Light.ttf
+        - asset: assets/fonts/BarlowCondensed-LightItalic.ttf
+        - asset: assets/fonts/BarlowCondensed-Medium.ttf
+        - asset: assets/fonts/BarlowCondensed-MediumItalic.ttf
+        - asset: assets/fonts/BarlowCondensed-Regular.ttf
+        - asset: assets/fonts/BarlowCondensed-SemiBold.ttf
+        - asset: assets/fonts/BarlowCondensed-SemiBoldItalic.ttf
+        - asset: assets/fonts/BarlowCondensed-Thin.ttf
+        - asset: assets/fonts/BarlowCondensed-ThinItalic.ttf
+          weight: 500
+    - family: Futura Md BT
+      fonts:
+        - asset: assets/fonts/Futura Md BT Bold.ttf
+        - asset: assets/fonts/Futura Md BT Bold Italic.ttf
+        - asset: assets/fonts/Futura Md BT Medium.ttf
+        - asset: assets/fonts/Futura Md BT Medium Italic.ttf
+          weight: 500
